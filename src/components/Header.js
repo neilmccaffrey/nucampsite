@@ -9,6 +9,7 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import NucampLogo from '../app/assets/img/logo.png';
+import UserLoginForm from '../features/user/UserLoginForm';
 
 
 const Header = () =>{
@@ -27,6 +28,7 @@ const Header = () =>{
                         <NavLink className='nav-link' to='/about'><i className='fa fa-info fa-lg' /> About</NavLink>
                         <NavLink className='nav-link' to='/contact'><i className='fa fa-address-card fa-lg' /> Contact</NavLink>
                     </Nav>
+                    <UserLoginForm />
                 </Collapse>
         </Navbar>
     )
